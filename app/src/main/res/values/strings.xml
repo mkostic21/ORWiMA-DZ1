@@ -1,3 +1,29 @@
 <resources>
+
+    <!--Misc-->
     <string name="app_name">ORWiMA DZ1</string>
+    <string name="btn_inspiration">Inspiration</string>
+    <string name="btn_edit_description">Edit Description</string>
+    <string name="edit_text_hint">Enter new description</string>
+
+    <!--Names-->
+    <string name="first_person">Colin McRae</string>
+    <string name="second_person">Kimi Räikkönen</string>
+    <string name="third_person">C. Iulius Caesar</string>
+
+    <!--Lifespan-->
+    <string name="first_person_lifespan">(1968 – 2007)</string>
+    <string name="second_person_lifespan">(1979 – present)</string>
+    <string name="third_person_lifespan">(100 – 44 BC)</string>
+
+    <!--Descriptions-->
+    <string name="first_person_description">One of the most famous and influential WRC drivers in history.</string>
+    <string name="second_person_description">One of the oldest and best F1 drivers in the world.</string>
+    <string name="third_person_description">One of the most acomplished leaders of all times.</string>
+
+    <!--Quotes-->
+    <string name="first_person_inspiration">"When in doubt, flat out!"</string>
+    <string name="second_person_inspiration">"F1 is a hobby for me."</string>
+    <string name="third_person_inspiration">"Alea iacta est."</string>
+
 </resources>
