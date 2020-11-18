@@ -1,27 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBackground">
 
     <Button
         android:id="@+id/btnInspiration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/btn_inspiration"/>
+        android:text="@string/btn_inspiration" />
     <ScrollView
-        android:layout_below="@id/btnInspiration"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/btnInspiration"
+        android:layout_above="@id/layoutBottomGroup">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        />
+            <!--First Card-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding"
+                android:layout_margin="@dimen/layout_margin"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="@dimen/image_height"
+                    android:src="@drawable/colin_mcrae"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="@dimen/image_margin_right"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:id="@+id/tvFirstPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_person"
+                    android:textSize="@dimen/person_name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/img1"/>
+                <TextView
+                    android:id="@+id/tvFirstPersonLifespan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/layout_vertical_padding"
+                    android:text="@string/first_person_lifespan"
+                    android:layout_toEndOf="@id/img1"
+                    android:layout_below="@id/tvFirstPersonName"/>
+                <TextView
+                    android:id="@+id/tvFirstPersonDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_person_description"
+                    android:textSize="@dimen/person_description"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/img1"
+                    android:layout_below="@id/tvFirstPersonLifespan"/>
+            </RelativeLayout>
+
+            <!--Second Card-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding"
+                android:layout_margin="@dimen/layout_margin"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="@dimen/image_height"
+                    android:src="@drawable/kimi_raikkonen"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="@dimen/image_margin_right"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tvSecondPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_person"
+                    android:textSize="@dimen/person_name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/img2"/>
+                <TextView
+                    android:id="@+id/tvSecondPersonLifespan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/layout_vertical_padding"
+                    android:text="@string/second_person_lifespan"
+                    android:layout_toEndOf="@id/img2"
+                    android:layout_below="@id/tvSecondPersonName"/>
+                <TextView
+                    android:id="@+id/tvSecondPersonDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_person_description"
+                    android:textSize="@dimen/person_description"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/img2"
+                    android:layout_below="@id/tvSecondPersonLifespan"/>
+            </RelativeLayout>
+
+            <!--Third Card-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding"
+                android:layout_margin="@dimen/layout_margin"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="@dimen/image_height"
+                    android:src="@drawable/gaius_iulius_caesar"
+                    android:scaleType="fitXY"
+                    android:layout_marginEnd="@dimen/image_margin_right"
+                    tools:ignore="ContentDescription" />
+                <TextView
+                    android:id="@+id/tvThirdPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/third_person"
+                    android:textSize="@dimen/person_name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/img3"/>
+                <TextView
+                    android:id="@+id/tvThirdPersonLifespan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/layout_vertical_padding"
+                    android:text="@string/third_person_lifespan"
+                    android:layout_toEndOf="@id/img3"
+                    android:layout_below="@id/tvThirdPersonName"/>
+                <TextView
+                    android:id="@+id/tvThirdPersonDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/third_person_description"
+                    android:textSize="@dimen/person_description"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@id/img3"
+                    android:layout_below="@id/tvThirdPersonLifespan"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
     <RelativeLayout
+        android:id="@+id/layoutBottomGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="@dimen/layout_horizontal_padding">
         <EditText
             android:id="@+id/etDescription"
             android:layout_width="match_parent"

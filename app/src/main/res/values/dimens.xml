@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="person_name">25sp</dimen>
+    <dimen name="person_description">16sp</dimen>
+
+    <dimen name="layout_vertical_padding">6dp</dimen>
+    <dimen name="layout_padding">10dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="layout_horizontal_padding">4dp</dimen>
+
+    <dimen name="image_width">100dp</dimen>
+    <dimen name="image_height">100dp</dimen>
+    <dimen name="image_margin_right">16dp</dimen>
+
+</resources>
