@@ -36,6 +36,8 @@
                     android:src="@drawable/colin_mcrae"
                     android:scaleType="fitXY"
                     android:layout_marginEnd="@dimen/image_margin_right"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
                     tools:ignore="ContentDescription" />
                 <TextView
                     android:id="@+id/tvFirstPersonName"
@@ -79,6 +81,8 @@
                     android:src="@drawable/kimi_raikkonen"
                     android:scaleType="fitXY"
                     android:layout_marginEnd="@dimen/image_margin_right"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
                     tools:ignore="ContentDescription" />
 
                 <TextView
@@ -123,6 +127,8 @@
                     android:src="@drawable/gaius_iulius_caesar"
                     android:scaleType="fitXY"
                     android:layout_marginEnd="@dimen/image_margin_right"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
                     tools:ignore="ContentDescription" />
                 <TextView
                     android:id="@+id/tvThirdPersonName"
