@@ -171,9 +171,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/edit_text_hint"
-            android:autofillHints="@string/edit_text_hint"
             android:inputType="text"/>
-        <!--TODO: Check autofillHints feature-->
 
         <Button
             android:id="@+id/btnDescription"
@@ -182,6 +180,7 @@
             android:layout_below="@id/etDescription"
             android:text="@string/btn_edit_description"/>
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/btnDescription"
